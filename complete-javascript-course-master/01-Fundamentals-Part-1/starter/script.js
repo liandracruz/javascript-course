@@ -89,6 +89,7 @@ multiple
 lines`);
 */
 
+/*
 const age = 19;
 const isOldEnough = age >= 18;
 
@@ -108,4 +109,42 @@ if (birthYear <= 2000) {
 }
 
 console.log(century)
+*/
+
+/*
+//Type conversion
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+const testNumber = 23;
+console.log(String(testNumber));
+
+//Type coercion
+console.log('I am' + 23 + 'years old');
+console.log('23' - '10' - 3);
+console.log('23' * '2')
+*/
+
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+const money = 0;
+if(money) {
+    console.log("Don't spend ot all");
+} else {
+    console.log('You should her a job');
+}
+
+let height;
+if(height) {
+    console.log('YAY! Height is defined');
+} else {
+    console.log('Height is UNDEFINED');
+}
+*/
+
 

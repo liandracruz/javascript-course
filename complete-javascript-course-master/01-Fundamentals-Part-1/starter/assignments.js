@@ -12,3 +12,9 @@ let description = `${country} is in ${continent}, and its ${population} million 
 
 console.log(country, continent, population, isIsland, language, halfPopulation, finlandPopulation > country, averagePopulation > country);
 console.log(description)
+
+if (population > 33.00) {
+    console.log(`${country} population is ${population - 33.00} millions above the average`)
+} else {
+    console.log(`${country} population is ${33.00 - population} below the average`)
+}
