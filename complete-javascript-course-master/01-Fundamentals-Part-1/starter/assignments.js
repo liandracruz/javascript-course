@@ -14,7 +14,20 @@ console.log(country, continent, population, isIsland, language, halfPopulation, 
 console.log(description)
 
 if (population > 33.00) {
-    console.log(`${country} population is ${population - 33.00} millions above the average`)
+    console.log(`${country} population is ${population - 33.00} millions above the average`);
 } else {
-    console.log(`${country} population is ${33.00 - population} below the average`)
+    console.log(`${country} population is ${33.00 - population} below the average`);
 }
+
+/*
+const numNeighbours = Number(prompt('How many neighbour contries does your country have?'));
+
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+*/
+
