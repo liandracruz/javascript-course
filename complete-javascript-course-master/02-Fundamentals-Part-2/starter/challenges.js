@@ -38,3 +38,15 @@ const percentageRomania3 = percentageOfWorld3(1907);
 const percentageColombia3 = percentageOfWorld3(5289);
 
 console.log(percentageIndia3, percentageRomania3, percentageColombia3);
+
+function describePopulation(country, population) {
+    const percPopulation = percentageOfWorld1(population);
+
+    return `${country} has ${population} million people, which is about ${percPopulation}% of the world`;
+}
+
+const india = describePopulation('India', 1451);
+const romania = describePopulation('Romania', 1907);
+const colombia = describePopulation('Colombia', 5289);
+
+console.log(india, romania, colombia);
