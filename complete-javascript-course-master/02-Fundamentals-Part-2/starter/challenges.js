@@ -31,3 +31,10 @@ const percentageRomania2 = percentageOfWorld2(1907);
 const percentageColombia2 = percentageOfWorld2(5289);
 
 console.log(percentageIndia2, percentageRomania2, percentageColombia2);
+
+const percentageOfWorld3 = population => (population / 8142) * 100;
+const percentageIndia3 = percentageOfWorld3(1451);
+const percentageRomania3 = percentageOfWorld3(1907);
+const percentageColombia3 = percentageOfWorld3(5289);
+
+console.log(percentageIndia3, percentageRomania3, percentageColombia3);
