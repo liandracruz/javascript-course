@@ -50,3 +50,24 @@ const romania = describePopulation('Romania', 1907);
 const colombia = describePopulation('Colombia', 5289);
 
 console.log(india, romania, colombia);
+
+const population = [1451, 1907, 5289];
+console.log(population.length === 3);
+
+const percentages = [percentageOfWorld1(population[0]), percentageOfWorld1(population[1]), percentageOfWorld1(population[2])];
+
+console.log(percentages);
+
+const neighbours = ['Argentina', 'Colombia','Peru'];
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+if(!neighbours.includes('Germany')) {
+    console.log('Probably not a central european contry :D');
+}
+
+console.log(neighbours.indexOf('Argentina'));
+neighbours[0] = 'Venezuela';
+console.log(neighbours);

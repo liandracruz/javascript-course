@@ -138,3 +138,22 @@ const ages = [
 console.log(ages);
 */
 
+const friends = ['Michael', 'Steven', 'Peter'];
+const newLenght = friends.push('Jay');
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift('John');
+console.log(friends);
+
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+
+console.log(friends.includes('Steven'));
+
