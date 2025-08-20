@@ -138,6 +138,7 @@ const ages = [
 console.log(ages);
 */
 
+/*
 const friends = ['Michael', 'Steven', 'Peter'];
 const newLenght = friends.push('Jay');
 console.log(friends);
@@ -156,4 +157,38 @@ console.log(friends);
 console.log(friends.indexOf('Steven'));
 
 console.log(friends.includes('Steven'));
+*/
+
+/*
+const liandra = {
+    fistName: 'Liandra',
+    lastName: 'da Cruz',
+    age: 2037 - 2002,
+    job: 'Student',
+    favoriteSubjects: ['History', 'Sociology', 'Philosophy', 'Art']
+};
+*/
+
+const liandra = {
+    firstName: 'Liandra',
+    lastName: 'da Cruz',
+    age: 2037 - 2002,
+    job: 'Student',
+    favoriteSubjects: ['History', 'Sociology', 'Philosophy', 'Art']
+};
+
+console.log(liandra.lastName);
+console.log(liandra['lastName']);
+
+const nameKey = 'Name';
+console.log(liandra['first' + nameKey]);
+console.log(liandra['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Lia? Choose between first name, last name, age, job or favorite subjects.');
+
+if (liandra[interestedIn]) {
+    console.log(liandra[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between first name, last name, age, job or favorite subjects.');
+}
 

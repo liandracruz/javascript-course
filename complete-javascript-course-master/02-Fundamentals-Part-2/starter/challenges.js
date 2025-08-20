@@ -71,3 +71,12 @@ if(!neighbours.includes('Germany')) {
 console.log(neighbours.indexOf('Argentina'));
 neighbours[0] = 'Venezuela';
 console.log(neighbours);
+
+const myCountry = {
+    country: 'Brazil',
+    capital: 'Brasilia',
+    language: 'Portuguese',
+    population: 212,
+    neighbours: ['Argentina', 'Bolivia', 'Colombia', 'Guyana', 'Paraguai', 'Peru', 'Suriname', 'Uruguay', 'Vezezuela', 'French Guiana']
+};
+
