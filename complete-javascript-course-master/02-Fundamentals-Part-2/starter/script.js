@@ -169,6 +169,7 @@ const liandra = {
 };
 */
 
+/*
 const liandra = {
     firstName: 'Liandra',
     lastName: 'da Cruz',
@@ -177,6 +178,8 @@ const liandra = {
     favoriteSubjects: ['History', 'Sociology', 'Philosophy', 'Art']
 };
 
+console.log(liandra);
+
 console.log(liandra.lastName);
 console.log(liandra['lastName']);
 
@@ -184,11 +187,55 @@ const nameKey = 'Name';
 console.log(liandra['first' + nameKey]);
 console.log(liandra['last' + nameKey]);
 
-const interestedIn = prompt('What do you want to know about Lia? Choose between first name, last name, age, job or favorite subjects.');
+const interestedIn = prompt('What do you want to know about me? Choose between fistName, lastName, age, job, and favoriteSubjects');
+console.log(liandra[interestedIn]);
 
 if (liandra[interestedIn]) {
     console.log(liandra[interestedIn]);
 } else {
-    console.log('Wrong request! Choose between first name, last name, age, job or favorite subjects.');
+    console.log('Wrong request! Choose between fistName, lastName, age, job, and favoriteSubjects');
 }
 
+liandra.location = 'Brazil';
+liandra['favoriteColor'] = 'Green';
+console.log(liandra);
+
+console.log(`${liandra.firstName} has ${liandra.favoriteSubjects.length} favorite subjects, and her favorite subject is ${liandra.favoriteSubjects[3]}.`);
+*/
+
+const liandra = {
+    firstName: 'Liandra',
+    lastName: 'da Cruz',
+    birthYear: 2002,
+    job: 'Student',
+    favoriteSubjects: ['History', 'Sociology', 'Philosophy', 'Art'],
+    hasDriversLicense: true,
+
+    // calcAge: function(birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    // calcAge: function() {
+    //     console.log(this)
+    //     return 2037 - this.birthYear;
+    // }
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge} `
+    }
+};
+
+console.log(liandra.calcAge());
+
+console.log(liandra.age);
+console.log(liandra.age);
+console.log(liandra.age);
+
+// console.log(liandra['calcAge'](2002));
+
+console.log(liandra.getSummary());
