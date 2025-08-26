@@ -216,7 +216,6 @@ const liandra = {
     // }
 
     // calcAge: function() {
-    //     console.log(this)
     //     return 2037 - this.birthYear;
     // }
 
@@ -226,7 +225,7 @@ const liandra = {
     },
 
     getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge} `
+        return `${this.firstName} is a ${this.calcAge()}-year-old ${this.job}, and she has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
     }
 };
 
@@ -235,7 +234,5 @@ console.log(liandra.calcAge());
 console.log(liandra.age);
 console.log(liandra.age);
 console.log(liandra.age);
-
-// console.log(liandra['calcAge'](2002));
 
 console.log(liandra.getSummary());

@@ -77,7 +77,15 @@ const myCountry = {
     capital: 'Brasilia',
     language: 'Portuguese',
     population: 212,
-    neighbours: ['Argentina', 'Bolivia', 'Colombia', 'Guyana', 'Paraguai', 'Peru', 'Suriname', 'Uruguay', 'Vezezuela', 'French Guiana']
+    neighbours: ['Argentina', 'Bolivia', 'Colombia', 'Guyana', 'Paraguai', 'Peru', 'Suriname', 'Uruguay', 'Vezezuela', 'French Guiana'],
+
+    describe: function() {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`);
+    },
+
+    checkIsland: function() {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+    }
 };
 
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
@@ -86,3 +94,8 @@ myCountry.population += 2;
 console.log(myCountry.population);
 myCountry['population'] -= 2;
 console.log(myCountry.population);
+
+myCountry.describe();
+myCountry.checkIsland();
+
+console.log(myCountry);
