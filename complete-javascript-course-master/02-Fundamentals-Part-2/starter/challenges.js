@@ -113,3 +113,27 @@ for(let i = 0; i < population2.length; i++) {
 }
 
 console.log(percentages2);
+
+const listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia'],
+];
+
+for(let i = 0; i < listOfNeighbours.length; i++) {
+    for(let y = 0; y < listOfNeighbours[i].length; y++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+    }
+}
+
+const population3 = [1451, 1907, 5289];
+const percentage3 = [];
+
+let i = 0;
+while(i < population3.length) {
+    const perc = percentageOfWorld1(population3[i]);
+    percentage3.push(perc);
+    i++;
+}
+
+console.log(percentage3);

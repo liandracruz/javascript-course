@@ -301,3 +301,44 @@ for(let i = 0; i < liandraArray.length; i++) {
 }
 */
 
+/*
+const liandra = [
+    'Liandra',
+    'da Cruz',
+    2037 - 2002,
+    'Student',
+    ['History', 'Philosophy', 'Sociology', 'Art'],
+    true
+];
+
+for (let i = liandra.length - 1; i >= 0; i--) {
+    console.log(i, liandra[i]);
+}
+
+for(let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`--------------- Starting exercise ${exercise}`);
+
+    for(let rep = 1; rep <= 5; rep++) {
+        console.log(`Exercise ${exercise}: lifiting wheight repition ${rep}`);
+    }
+}
+*/
+
+// for(let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifiting weights repetition ${rep}`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repetition ${rep}`);
+//     rep++
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while(dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if(dice === 6) console.log('Loop is ended');
+}
