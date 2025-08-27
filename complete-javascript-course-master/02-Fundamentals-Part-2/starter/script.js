@@ -256,6 +256,7 @@ for(let rep = 1; rep <= 10; rep++ ) { //or rep = rep + 1
 };
 */
 
+/*
 const liandraArray = [
     'Liandra',
     'da Cruz',
@@ -298,3 +299,5 @@ for(let i = 0; i < liandraArray.length; i++) {
 
     console.log(liandraArray[i], typeof liandraArray[i]);
 }
+*/
+

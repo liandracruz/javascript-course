@@ -99,3 +99,17 @@ myCountry.describe();
 myCountry.checkIsland();
 
 console.log(myCountry);
+
+for(let i = 1; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+}
+
+const population2 = [1451, 1907, 5289];
+const percentages2 = [];
+
+for(let i = 0; i < population2.length; i++) {
+    const perc = percentageOfWorld1(population2[i]);
+    percentages2.push(perc);
+}
+
+console.log(percentages2);
