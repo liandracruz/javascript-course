@@ -203,6 +203,7 @@ console.log(liandra);
 console.log(`${liandra.firstName} has ${liandra.favoriteSubjects.length} favorite subjects, and her favorite subject is ${liandra.favoriteSubjects[3]}.`);
 */
 
+/*
 const liandra = {
     firstName: 'Liandra',
     lastName: 'da Cruz',
@@ -236,3 +237,64 @@ console.log(liandra.age);
 console.log(liandra.age);
 
 console.log(liandra.getSummary());
+*/
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4');
+// console.log('Lifting weights repetition 5');
+// console.log('Lifting weights repetition 6');
+// console.log('Lifting weights repetition 7');
+// console.log('Lifting weights repetition 8');
+// console.log('Lifting weights repetition 9');
+// console.log('Lifting weights repetition 10');
+
+/*
+for(let rep = 1; rep <= 10; rep++ ) { //or rep = rep + 1
+    console.log(`Lifting weights repetition ${rep}`);
+};
+*/
+
+const liandraArray = [
+    'Liandra',
+    'da Cruz',
+    2037 - 2002,
+    'Student',
+    ['History', 'Philosophy', 'Sociology', 'Art'],
+];
+
+const types = [];
+
+//Starting with the 0 because arrays are 0 based
+for (let i = 0; i < liandraArray.length; i++) {
+    console.log(liandraArray[i], typeof liandraArray[i]);
+
+    //types[i] = typeof liandraArray[i];
+
+    types.push(typeof liandraArray[i]);
+}
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for(let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+
+console.log('---ONLY STRINGS---')
+for(let i = 0; i < liandraArray.length; i++) {
+    if(typeof liandraArray[i] !== 'string') continue;
+
+    console.log(liandraArray[i], typeof liandraArray[i]);
+}
+
+console.log('---ONLY NUMBERS---');
+for(let i = 0; i < liandraArray.length; i++) {
+    if(typeof liandraArray[i] === 'number') break;
+
+    console.log(liandraArray[i], typeof liandraArray[i]);
+}
