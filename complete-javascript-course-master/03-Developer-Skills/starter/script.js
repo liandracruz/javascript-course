@@ -27,6 +27,7 @@ const amplitude = calcTempAmplitude(temps);
 console.log(amplitude);
 */
 
+/*
 const measureKelvin = function() {
   const measurement = {
     type: 'temp',
@@ -44,3 +45,4 @@ const measureKelvin = function() {
   return kelvin;
 };
 console.log(measureKelvin());
+*/
